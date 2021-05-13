@@ -1,10 +1,30 @@
 import axios from 'axios';
 
 export default class Backendapi {
-    getMessages(query){
+    getMessages_twitt(query){
         console.log(query);
+        //for reddit
+        
+        // create connection with the resultws we get via Heroku´
+      
+        const path = 'https://fnt-backend.herokuapp.com/twitter/search';
+            
 
-        const path = 'http://localhost:8081/showinfo';
+        return axios.post(path, {query}).then((res1) => {
+           return res1.data
+
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+    }
+    getMessages_redd(query){
+        console.log(query);
+        //for reddit
+        
+        // create connection with the resultws we get via Heroku            
+        const path = 'https://fnt-backend.herokuapp.com/reddit/search';
+        
         return axios.post(path, {query}).then((res) => {
            return res.data
 

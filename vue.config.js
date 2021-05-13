@@ -6,12 +6,14 @@ module.exports = {
         ],
       },
       module: {
+        
         rules: [
           {
             test: /sigma.*/,
             use: 'imports-loader?this=>window',
           },
         ],
-      }
-    }
+      },
+    },
+    css: { extract: false }
   }

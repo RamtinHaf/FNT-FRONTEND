@@ -20,7 +20,7 @@
     <!-- Displayed when the user has not selected any query -->
     <transition name="slide-down">
         <div  class="container_for_no_query" v-if="Display1.query == '' && Display2.query == ''">
-            <h1>Activate of the queries you have chosen above or go to "Your Trackers" to add a search</h1>
+            <h3>Activate up to two searches above or navigate to Your Trackers to add new search</h3>
         </div>
     </transition>
 

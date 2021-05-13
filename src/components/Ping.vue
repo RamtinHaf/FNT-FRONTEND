@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     getMessage() {
-      const path = 'http://localhost:5000/ping';
+      const path = 'https://fnt-backend.herokuapp.com/ping';
       axios.get(path)
         .then((res) => {
           this.msg = res.data;

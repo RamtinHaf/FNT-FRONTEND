@@ -18,7 +18,7 @@ export default {
     },
     methods: {
         getMessage() {
-            const path = 'http://localhost:5000/showinfo';
+            const path = 'https://fnt-backend.herokuapp.com/showinfo';
             axios.post(path, {id:5}).then((res) => {
                 this.alldata = res.data;
             })

@@ -79,8 +79,16 @@ export default createStore({
         let api = new Backendapi();
         console.log("now its loading");
         
-        let response = await api.getMessages(searchValue);
-        console.log(response.data)
+        let twitt_response = await api.getMessages_twitt(searchValue);
+        console.log(twitt_response)
+        let redd_response = await api.getMessages_redd(searchValue);
+        console.log(redd_response)
+        // let response = {...twitt_response.data}
+        // let response = Object.assign({}, twitt_response.data.searchValue, redd_response.data)
+        let response = {"data": {searchValue: {}}}
+        response.data[searchValue] = {...twitt_response.data[searchValue],...redd_response.data[searchValue]}
+        console.log("all the data combined")
+        console.log(response)
 
         if(response.data == "No data"){
           state.commit("SetTweets", response.data);

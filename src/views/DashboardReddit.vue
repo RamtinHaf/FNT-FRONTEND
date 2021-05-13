@@ -19,7 +19,7 @@
 
     <!-- Displayed when the user has not selected any query -->
     <div class="container_for_no_query" v-if="Display1.query == '' && Display2.query == ''">
-        <h1>Activate of the queries you have chosen above or go to "Your Trackers" to add a search</h1>
+        <h1>Activate up to two searches above or navigate to Your Trackers to add new search</h1>
     </div>
 
     <!-- Reddit view, only 1 query selected -->

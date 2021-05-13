@@ -1,5 +1,12 @@
 <template>
 <div class="container">
+<div class="">
+  hello
+</div>
+  <transition name="slide-fade">
+        <p class="hello-t" v-if="show">Sign in with Twitter to make the experience better</p>
+      </transition>
+
     <!-- this how u put images in site -->
     <!-- <img src="..assets/Forgery_News_tracker_NEW.png" width="500px" height="500px"><br> -->
     <!-- <div id="users_list"> 
@@ -9,7 +16,14 @@
         </li>   
       </ul>
     </div> -->
-    <template v-if="code === undefined">
+
+      <!-- sign in with twitter transition -->
+      <transition name="slide-fade">
+        <p v-if="show">Sign in with Twitter to make the experience better</p>
+      </transition>
+      <template v-if="code === undefined">
+    
+
       <button class="btn bg-transparent" @click="login()"><img class="twt-pic" :src="require('../assets/twitter_button.png')"></button>
     </template>
     <template v-else>
@@ -44,10 +58,15 @@ export default {
               // {
               //   name: "Ram"
               // },
-            ]
+            ],
+          show: false,
+          
         }
     },
     methods: {
+    showTut(){
+      this.show = true
+        },
     gotoPage(){
       this.$router.push('/yourtrackers');
     },
@@ -95,4 +114,30 @@ export default {
     width: 45%;
     height: auto;
   }
+  .fade-enter-active,
+.fade-leave-active {
+  transition: opacity 2.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.slide-fade-enter-active {
+  transition: all 2.5s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 2.5s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(40px);
+  opacity: 0;
+}
+.hello-t{
+  color: black;
+}
+
 </style>

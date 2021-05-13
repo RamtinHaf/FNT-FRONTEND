@@ -37,6 +37,7 @@
                                     <option>Corona changes DNA</option>
                                     <option>DMX received COVID vaccine days before heart attack </option>
                                     <option>Crypto is a scam</option>
+                                    <option>Bitcoin is a scam</option>
                                 </select>
                             </div> 
                     </div>
@@ -50,6 +51,8 @@
         
         <div class="bottom" v-show="searchlist_length>0">
             <h4>Your Recent Searches</h4>
+        
+            <h5>Click on your search to active/deactivate</h5>
             <search-list/>
             <div class="action-holder">
                 <div class="action">

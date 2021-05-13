@@ -14,13 +14,13 @@ export default createRouter({
   routes: [
     {
       path:'/',
-      name: 'LandingPage',
-      component: LandingPage
+      name: 'Home',
+      component: Home
     },
     {
-    path: '/home',
-    name: 'Home',
-    component: Home,
+    path: '/LandingPage',
+    name: 'LandingPage',
+    component: LandingPage,
   },
     
   {

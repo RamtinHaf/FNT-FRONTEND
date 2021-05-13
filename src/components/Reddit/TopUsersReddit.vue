@@ -4,7 +4,7 @@
         <h3>Most Influential Users reddit</h3>
         <div class="help-tip-container">
                 <div class="help-tip">
-                    <p>The most influential users are the top 9 users with the most karma, that has posted about the query or has interacted.</p>
+                    <p>The most influential users are the top 9 users with the most karma, that has posted about the query or has interacted. Click on any user to open up in Reddit.</p>
                 </div>
             </div>
       </div>

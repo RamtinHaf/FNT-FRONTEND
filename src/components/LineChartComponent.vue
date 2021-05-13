@@ -11,10 +11,10 @@
         </div>
 
         <div class="chart-container" v-show="listdata2.query != ''">
-        <line-chart :data="[{'name': listdata1.query, 'data': listdata1.linechart }, {'name': listdata2.query, 'data': listdata2.linechart }]" :colors="['#000', '#666']" :dataset="{borderWidth: 2}" xtitle="Tweeted at" ytitle="Cumulative Tweets" :messages="{empty: 'No data'}"></line-chart>
+        <line-chart :data="[{'name': listdata1.query, 'data': listdata1.linechart }, {'name': listdata2.query, 'data': listdata2.linechart }]" :colors="['blue', '#669933']" :dataset="{borderWidth: 2}" xtitle="Tweeted at" ytitle="Cumulative Tweets" :messages="{empty: 'No data'}"></line-chart>
         </div>
         <div class="chart-container" v-show="listdata2.query == ''">
-        <line-chart :data="[{'name': listdata1.query, 'data': listdata1.linechart }]" :colors="['#000', '#0000FF']" :dataset="{borderWidth: 2}" xtitle="Tweeted at" ytitle="Cumulative Tweets" :messages="{empty: 'No data'}"></line-chart>
+        <line-chart :data="[{'name': listdata1.query, 'data': listdata1.linechart }]" :colors="['blue', '#669933']" :dataset="{borderWidth: 2}" xtitle="Tweeted at" ytitle="Cumulative Tweets" :messages="{empty: 'No data'}"></line-chart>
         </div>
 
     </div>

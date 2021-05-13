@@ -1,3 +1,6 @@
+
+
+
 <template>
     <header id="absolute-main-header" style="margin-bottom:50px">
         <div id="inner">
@@ -25,6 +28,8 @@
                                     More
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLScsot9B308hVwN_SwIyFVLkFeqculQMSefC0VeoTAvavH1eAA/viewform" target="popup" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScsot9B308hVwN_SwIyFVLkFeqculQMSefC0VeoTAvavH1eAA/viewform','name','width=800,height=500')">Feedback survey</a></li>
+                                    <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" @click="gotoFAQ()">FAQ</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" @click="gotoHOME()">Tutorial</a></li>
@@ -71,7 +76,7 @@ export default {
 <style scoped>
 .navbar{
     min-height: 50px;
-    font-size: 16px;
+    font-size: 21px;
     background-color: #26293C;
     color: #FFFFFFBF;
 }
@@ -85,6 +90,10 @@ export default {
 }
 .nav.navbar-nav.navbar-right li a {
     color: white;
+}
+.nav-item{
+    padding-right: 25px;
+
 }
 
 .collapse{

@@ -1,8 +1,11 @@
 <template>
   <div class="container">
+    <div>
+      <img src="../assets/logo-main-2.png">
+    </div>
     <!-- this how u put images in site -->
     <!-- <img src="..assets/Forgery_News_tracker_NEW.png" width="500px" height="500px"><br> -->
-    <carusel-home-page/>
+    <!-- <carusel-home-page/> -->
     <!-- <div>
     </div>
     <div id="users_list"> 
@@ -31,7 +34,7 @@
 //here we import other components
 // import SearchBox from '../components/SearchBox.vue';
 import TwitterAPI from '../backend_api/twitter.js';
-import CaruselHomePage from '../components/CaruselHomePage.vue';
+// import CaruselHomePage from '../components/CaruselHomePage.vue';
 
 
 export default {
@@ -41,12 +44,12 @@ export default {
     codeResolver: undefined,
     users: [
       // {
-      //   name: "Saman"
+      //   name: "Ramtin"
       // },
     ]
   }),
   components: {
-    CaruselHomePage
+    // CaruselHomePage
   },
   methods: {
     gotoPage(){

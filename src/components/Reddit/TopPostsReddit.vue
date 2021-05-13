@@ -5,7 +5,7 @@
       <h3>Top Posts</h3>
       <div class="help-tip-container">
                 <div class="help-tip">
-                    <p>The top posts is the 3 posts on Reddit. It is sorted by the number of upvotes.</p>
+                    <p>The top posts is the 3 posts on Reddit. It is sorted by the number of upvotes. Click on any post to open up in Reddit.</p>
                 </div>
             </div>
     </div>

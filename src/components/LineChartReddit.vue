@@ -12,7 +12,7 @@
 
        
         <div class="chart-container">
-            <line-chart :data="[{'name': listdata1.query, 'data': listdata1.linechartreddit }]" :colors="['#000', '#0000FF']" :dataset="{borderWidth: 2}" xtitle="Tweeted at" ytitle="Cumulative Tweets" :messages="{empty: 'No data'}"></line-chart>
+            <line-chart :data="[{'name': listdata1.query, 'data': listdata1.linechartreddit }, {'name': listdata2.query, 'data': listdata2.linechartreddit }]" :colors="['blue', '#669933']" :dataset="{borderWidth: 2}" xtitle="Tweeted at" ytitle="Cumulative Tweets" :messages="{empty: 'No data'}"></line-chart>
         </div>
 
     </div>

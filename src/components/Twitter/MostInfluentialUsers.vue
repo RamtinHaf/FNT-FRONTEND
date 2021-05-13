@@ -4,7 +4,7 @@
         <h3>Most Influential Users</h3>
         <div class="help-tip-container">
                 <div class="help-tip">
-                    <p>The most influential users are the top 9 users with the most followers, that has tweeted about the query or has interacted.</p>
+                    <p>The most influential users are the top 9 users with the most followers, that has tweeted about the query or has interacted. Click on user to open with Twitter</p>
                 </div>
             </div>
       </div>

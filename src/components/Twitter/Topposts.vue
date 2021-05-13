@@ -5,7 +5,7 @@
       <h3>Top Posts</h3>
       <div class="help-tip-container">
                 <div class="help-tip">
-                    <p>The top posts is the 3 tweets with the most retweets. The reason it is sorted by retweets and not likes is because more retweets means a wider reach.</p>
+                    <p>The top posts is the 3 tweets with the most retweets. The reason it is sorted by retweets and not likes is because more retweets means a wider reach. Click on any post to open up in Twitter.</p>
                 </div>
             </div>
     </div>

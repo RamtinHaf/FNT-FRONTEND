@@ -7,7 +7,7 @@
                 v-bind:class='{ "not_selected": title.active == false, "active": title.active == true, 
                 "non_clickable": tweets_displayed == 2 && title.active == false, "no_data": title.data == false}'
                 v-on:click="check(index)"  class="list-group-item list-group-item-action">
-                    <span style="font-size:2.5rem;font-weight:bold" v-show="title.loaded == true">{{title.title}}</span>
+                    <span style="font-size:1.5rem;font-weight:bold" v-show="title.loaded == true">{{title.title}}</span>
                     <div v-show="title.loaded == false">
                         <img class="loadingspin" src="../assets/spinner-transparent.gif" alt="">
                     </div>

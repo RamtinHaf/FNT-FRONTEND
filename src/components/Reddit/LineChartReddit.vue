@@ -5,14 +5,15 @@
             <h3><span>Timeline Reddit</span></h3>
             <div class="help-tip-container">
                 <div class="help-tip">
-                    <p>The line chart shows the total posts on reddit over time. Reddit returns the 100 most popular posts for the selected query. </p>
+                    <p>The line chart shows the total posts on reddit over time. Reddit returns the 100 most popular posts for the selected query.</p>
                 </div>
             </div>
         </div>
 
        
         <div class="chart-container">
-            <line-chart :data="[{'name': listdata1.query, 'data': listdata1.linechartreddit }]" :colors="['#000', '#0000FF']" :dataset="{borderWidth: 2}" xtitle="Tweeted at" ytitle="Cumulative Tweets" :messages="{empty: 'No data'}"></line-chart>
+            <line-chart :data="[{'name': listdata1.query, 'data': listdata1.linechartreddit }, {'name': listdata2.query, 'data': listdata2.linechartreddit }]" :colors="['#005194', '#9c0000']" :dataset="{borderWidth: 2}" xtitle="Tweeted at" ytitle="Cumulative Tweets" :messages="{empty: 'No data'}"></line-chart>
+
         </div>
 
     </div>

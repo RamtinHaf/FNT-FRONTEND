@@ -3,10 +3,10 @@
 <div class="node_box">
  
     <div class="chartheader">
-      <h3>Node network</h3>
+      <h3>Network</h3>
             <div class="help-tip-container">
                 <div class="help-tip">
-                    <p>The top posts is the 3 tweets with the most retweets. The reason it is sorted by retweets and not likes is because more retweets means a wider reach.</p>
+                    <p>Node Network is a visualization of who had the most impact on spreading the data and to which user it has reached. The bigger the Node is, the more followers the user has.</p>
                 </div>
             </div>
     </div>
